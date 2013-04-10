@@ -1,0 +1,15 @@
+[submodule "libraries/flot"]
+	path = libraries/flot
+	url = https://github.com/flot/flot.git
+[submodule "libraries/flot-axislabels"]
+	path = libraries/flot-axislabels
+	url = https://github.com/markrcote/flot-axislabels
+[submodule "libraries/flot-labels"]
+	path = libraries/flot-labels
+	url = https://github.com/burlandm/flot-labels
+[submodule "libraries/jquery-csv"]
+	path = libraries/jquery-csv
+	url = https://code.google.com/p/jquery-csv
+[submodule "libraries/biginteger"]
+	path = libraries/biginteger
+	url = https://github.com/silentmatt/javascript-biginteger

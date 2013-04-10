@@ -1,0 +1,58 @@
+<head>
+  <meta charset='utf-8'> 
+  <title>Frequency of Crash Report Metadata</title>
+  <link rel="stylesheet" type="text/css" href="common.css">
+
+  <style type="text/css">
+    .flot-y-axis .tickLabel {
+      padding-top: 0.5ex;
+      // outline: 1px dotted blue;
+      text-align: bottom;
+    }
+  </style>
+
+<body>
+  <h1>Frequency of Crash Report Metadata</h1>
+
+  <p><a id="datalink" href="data/crashmeta-130402.csv">Raw Data (2-Apr-2013)</a>
+
+  <div id="chart" class="chart-short"></div>
+
+  <h3><a href="https://github.com/mozilla/jydoop/">Jydoop</a> Collection Script</h3>
+
+  <pre class="code">import crashstatsutils
+import json
+import jydoop
+
+setupjob = crashstatsutils.dosetupjob([('meta_data', 'json'), ('processed_data', 'json')])
+
+def map(k, meta_data, processed_data, context):
+    if processed_data is None:
+        return
+
+    try:
+        meta = json.loads(meta_data)
+        processed = json.loads(processed_data)
+    except:
+        context.write('jsonerror', 1)
+        return
+
+    product = meta['ProductName']
+
+    os = processed.get('os_name', None)
+    if os is None:
+        return
+
+    context.write((product, os, '$total'), 1)
+    for key in meta:
+        context.write((product, os, key), 1)
+
+combine = jydoop.sumreducer
+reduce = jydoop.sumreducer
+</pre>
+
+  <script type="text/javascript" src="libraries/jquery.min.js"></script>
+  <script type="text/javascript" src="libraries/flot/jquery.flot.js"></script>
+  <script type="text/javascript" src="libraries/jquery-csv/src/jquery.csv.js"></script>
+  <script type="text/javascript" src="common.js"></script>
+  <script type="text/javascript" src="crash-meta-frequency.js"></script>

@@ -1,0 +1,14 @@
+body {
+  font-family: sans-serif;
+}
+
+.chart-short {
+  width: 100%;
+  height: 250px;
+}
+
+pre.code {
+  background-color: #eee;
+  border: 1px solid #222;
+  padding: 4px;
+}
