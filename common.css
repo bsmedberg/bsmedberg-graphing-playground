@@ -12,3 +12,7 @@ pre.code {
   border: 1px solid #222;
   padding: 4px;
 }
+
+.nobullet {
+  list-style-type: none;
+}

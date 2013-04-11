@@ -1,0 +1,57 @@
+<head>
+  <title>Graphical Representation of Minidump Memory Info</title>
+
+  <link rel="stylesheet" type="text/css" href="common.css">
+
+  <style type="text/css">
+  #commitLegend {
+    border-left: 1em solid #221d6b;
+  }
+  #reserveLegend {
+    border-left: 1em solid #cca633;
+  }
+  #c {
+    position: relative;
+  }
+  #overlay {
+    border: 1px solid black;
+    background-color: #CCC;
+    padding: 2px;
+    display: block;
+    position: absolute;
+    opacity: 0.9;
+    display: none;
+  }
+  </style>
+
+<body>
+  <h1>Graphical Representation of Minidump Memory Info</h1>
+
+  <ul class="nobullet">
+    <li id="commitLegend">Committed Page
+    <li id="reserveLegend">Reserved Page
+  </ul>
+
+  <p><a id="datalink" href="data/bug857030-863bb262-a6dd-43fe-ae32-ef9a82130404.memorylist">View the raw data</a>. Data generated using Google Breakpad and the <a href="https://github.com/bsmedberg/minidump-memorylist">minidump-memorylist</a> tool.
+
+  <p><a href="https://crash-stats.mozilla.com/report/index/863bb262-a6dd-43fe-ae32-ef9a82130404">View at crash-stats.mozilla.com</a>
+
+  <p>Largest contiguous memory range: <span id="largestrange"></span>
+
+  <div>
+  <canvas id="c"></canvas>
+  </div>
+
+  <div id="overlay">
+    Address: <span id="infoaddress"></span><br>
+    Size: <span id="infosize"></span><br>
+    State: <span id="infostate"></span><br>
+    Protection: <span id="infoprotection"></span><br>
+    Type: <span id="infotype"></span>
+  </div>
+
+  <script type="text/javascript" src="libraries/jquery.min.js"></script>
+  <script type="text/javascript" src="libraries/jquery-csv/src/jquery.csv.js"></script>
+  <script type="text/javascript" src="libraries/biginteger/biginteger.js"></script>
+  <script type="text/javascript" src="common.js"></script>
+  <script type="text/javascript" src="graphical-minidump-memoryinfo.js"></script>

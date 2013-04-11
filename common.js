@@ -10,5 +10,3 @@ function loadData(url, type, callback)
     success: callback,
   });
 }
-
-      
