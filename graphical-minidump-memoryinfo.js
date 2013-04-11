@@ -53,6 +53,12 @@ var gReserveColor = '#cca633';
 
 var gLargest = BigInteger(0);
 
+function checkLargest(blocksize) {
+  if (blocksize.compare(gLargest) > 0) {
+    gLargest = blocksize;
+  }
+}
+
 function verifySequential()
 {
   var end = BigInteger(0);
@@ -71,7 +77,7 @@ function verifySequential()
     }
     end = cur.BaseAddress.add(cur.RegionSize);
     if (cur.State == 0x10000) { // MEM_FREE
-      gLargest = end.subtract(lastAvailable);
+      checkLargest(end.subtract(lastAvailable));
     }
     else {
       lastAvailable = end;
