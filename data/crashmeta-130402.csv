@@ -1,0 +1,666 @@
+('', 'Windows NT', '$total')	1
+('', 'Windows NT', 'AvailablePageFile')	1
+('', 'Windows NT', 'CrashTime')	1
+('', 'Windows NT', 'InstallTime')	1
+('', 'Windows NT', 'ReleaseChannel')	1
+('', 'Windows NT', 'Throttleable')	1
+('', 'Windows NT', 'TotalVirtualMemory')	1
+('', 'Windows NT', 'Vendor')	1
+('', 'Windows NT', 'Version')	1
+('', 'Windows NT', 'version')	1
+('B2G', 'Android', 'Android_Brand')	8
+('B2G', 'Android', 'URL')	7
+('B2G', 'Android', 'id')	8
+('B2G', 'Mac OS X', 'BuildID')	1
+('B2G', 'Mac OS X', 'Notes')	1
+('B2G', 'Mac OS X', 'Theme')	1
+('B2G', 'Mac OS X', 'buildid')	1
+('B2G', 'Mac OS X', 'legacy_processing')	1
+('B2G', 'Windows NT', 'AvailableVirtualMemory')	5
+('B2G', 'Windows NT', 'URL')	5
+('B2G', 'Windows NT', 'id')	5
+('Camino', 'Mac OS X', 'BuildID')	62
+('Camino', 'Mac OS X', 'legacy_processing')	62
+('Eudora OSE', 'Windows NT', 'URL')	1
+('Fennec', 'Android', 'Android_CPU_ABI')	47257
+('Fennec', 'Android', 'Android_CPU_ABI2')	47257
+('Fennec', 'Android', 'Android_Manufacturer')	47257
+('Fennec', 'Android', 'Android_Model')	47257
+('Fennec', 'Android', 'BuildID')	47257
+('Fennec', 'Android', 'Notes')	47257
+('Fennec', 'Android', 'Theme')	45249
+('Fennec', 'Android', 'buildid')	47257
+('Fennec', 'Android', 'legacy_processing')	47257
+('Fennec', 'Linux', '$total')	8630
+('Fennec', 'Linux', 'AdapterDeviceID')	5193
+('Fennec', 'Linux', 'Add-ons')	7533
+('Fennec', 'Linux', 'Android_Fingerprint')	7002
+('Fennec', 'Linux', 'Android_Hardware')	6998
+('Fennec', 'Linux', 'Android_Version')	7002
+('Fennec', 'Linux', 'CrashTime')	8417
+('Fennec', 'Linux', 'EMCheckCompatibility')	8329
+('Fennec', 'Linux', 'InstallTime')	8628
+('Fennec', 'Linux', 'Min_ARM_Version')	7002
+('Fennec', 'Linux', 'ReleaseChannel')	8621
+('Fennec', 'Linux', 'Throttleable')	2
+('Fennec', 'Linux', 'Vendor')	8630
+('Fennec', 'Linux', 'Version')	8630
+('Fennec', 'Linux', 'version')	6669
+('Firefox', 'Linux', '$total')	2274
+('Firefox', 'Linux', 'Add-ons')	2220
+('Firefox', 'Linux', 'Comments')	90
+('Firefox', 'Linux', 'CrashTime')	2274
+('Firefox', 'Linux', 'EMCheckCompatibility')	2221
+('Firefox', 'Linux', 'Email')	126
+('Firefox', 'Linux', 'InstallTime')	2268
+('Firefox', 'Linux', 'ReleaseChannel')	2145
+('Firefox', 'Linux', 'Throttleable')	1311
+('Firefox', 'Linux', 'Vendor')	2274
+('Firefox', 'Linux', 'Version')	2274
+('Firefox', 'Linux', 'additional_minidumps')	113
+('Firefox', 'Linux', 'version')	2176
+('Firefox', 'Mac OS X', 'IsGarbageCollecting')	220
+('Firefox', 'Mac OS X', 'URL')	4574
+('Firefox', 'Mac OS X', 'id')	4665
+('Firefox', 'Windows NT', 'AvailablePhysicalMemory')	148836
+('Firefox', 'Windows NT', 'BuildID')	318062
+('Firefox', 'Windows NT', 'CpuUsageFlashProcess1')	46903
+('Firefox', 'Windows NT', 'CpuUsageFlashProcess5')	8
+('Firefox', 'Windows NT', 'FramePCrashTime')	1
+('Firefox', 'Windows NT', 'HangID')	16441
+('Firefox', 'Windows NT', 'Installstop')	1
+('Firefox', 'Windows NT', 'Notes')	277057
+('Firefox', 'Windows NT', 'NumberOfProcessors')	60478
+('Firefox', 'Windows NT', 'PluginContentURL')	334
+('Firefox', 'Windows NT', 'PluginHang')	59162
+('Firefox', 'Windows NT', 'PluginHangUIDuration')	6597
+('Firefox', 'Windows NT', 'PluginUserComment')	19
+('Firefox', 'Windows NT', 'PluginVersion')	18550
+('Firefox', 'Windows NT', 'PrnductID')	1
+('Firefox', 'Windows NT', 'ProcessType')	106624
+('Firefox', 'Windows NT', 'SystemMemoRyUsePercentage')	1
+('Firefox', 'Windows NT', 'SystemMemoryUsePercentage')	172977
+('Firefox', 'Windows NT', 'Theme')	305700
+('Firefox', 'Windows NT', 'buildiD')	1
+('Firefox', 'Windows NT', 'buildid')	292491
+('Firefox', 'Windows NT', 'legacy_processing')	318069
+('MetroFirefox', 'Windows NT', '$total')	21
+('MetroFirefox', 'Windows NT', 'AdapterDeviceID')	20
+('MetroFirefox', 'Windows NT', 'Add-ons')	1
+('MetroFirefox', 'Windows NT', 'AvailablePageFile')	21
+('MetroFirefox', 'Windows NT', 'CrashTime')	21
+('MetroFirefox', 'Windows NT', 'EMCheckCompatibility')	20
+('MetroFirefox', 'Windows NT', 'InstallTime')	21
+('MetroFirefox', 'Windows NT', 'ReleaseChannel')	21
+('MetroFirefox', 'Windows NT', 'Throttleable')	1
+('MetroFirefox', 'Windows NT', 'TotalVirtualMemory')	21
+('MetroFirefox', 'Windows NT', 'Vendor')	21
+('MetroFirefox', 'Windows NT', 'Version')	21
+('MetroFirefox', 'Windows NT', 'version')	21
+('SeaMonkey', 'Linux', 'IsGarbageCollecting')	2
+('SeaMonkey', 'Linux', 'URL')	2
+('SeaMonkey', 'Linux', 'id')	20
+('SeaMonkey', 'Mac OS X', '$total')	31
+('SeaMonkey', 'Mac OS X', 'AdapterDeviceID')	21
+('SeaMonkey', 'Mac OS X', 'Add-ons')	29
+('SeaMonkey', 'Mac OS X', 'CrashTime')	31
+('SeaMonkey', 'Mac OS X', 'EMCheckCompatibility')	21
+('SeaMonkey', 'Mac OS X', 'Email')	5
+('SeaMonkey', 'Mac OS X', 'InstallTime')	31
+('SeaMonkey', 'Mac OS X', 'ReleaseChannel')	23
+('SeaMonkey', 'Mac OS X', 'Throttleable')	25
+('SeaMonkey', 'Mac OS X', 'Vendor')	31
+('SeaMonkey', 'Mac OS X', 'Version')	31
+('SeaMonkey', 'Mac OS X', 'additional_minidumps')	4
+('SeaMonkey', 'Mac OS X', 'version')	21
+('SeaMonkey', 'Windows NT', 'Accessibility')	62
+('SeaMonkey', 'Windows NT', 'AdapterVendorID')	1280
+('SeaMonkey', 'Windows NT', 'CpuUsageFlashProcess2')	229
+('SeaMonkey', 'Windows NT', 'FramePoisonBase')	1080
+('SeaMonkey', 'Windows NT', 'FramePoisonSize')	1080
+('SeaMonkey', 'Windows NT', 'OOMAllocationSize')	23
+('SeaMonkey', 'Windows NT', 'PluginFilename')	521
+('SeaMonkey', 'Windows NT', 'PluginName')	48
+('SeaMonkey', 'Windows NT', 'ProductID')	1275
+('SeaMonkey', 'Windows NT', 'ProductName')	1404
+('SeaMonkey', 'Windows NT', 'SecondsSinceLastCrash')	767
+('SeaMonkey', 'Windows NT', 'StartupTime')	1404
+('SeaMonkey', 'Windows NT', 'Winsock_LSP')	1285
+('SeaMonkey', 'Windows NT', 'submitted_timestamp')	1404
+('SeaMonkey', 'Windows NT', 'timestamp')	1404
+('Shibo_web', 'Windows NT', 'FramePoisonBase')	2
+('Shibo_web', 'Windows NT', 'FramePoisonSize')	2
+('Shibo_web', 'Windows NT', 'ProductName')	2
+('Shibo_web', 'Windows NT', 'SecondsSinceLastCrash')	2
+('Shibo_web', 'Windows NT', 'StartupTime')	2
+('Shibo_web', 'Windows NT', 'submitted_timestamp')	2
+('Shibo_web', 'Windows NT', 'timestamp')	2
+('Sunbird', 'Windows NT', 'BuildID')	25
+('Sunbird', 'Windows NT', 'Theme')	25
+('Sunbird', 'Windows NT', 'legacy_processing')	25
+('Thunderbird', 'Linux', '$total')	796
+('Thunderbird', 'Linux', 'Add-ons')	733
+('Thunderbird', 'Linux', 'Comments')	12
+('Thunderbird', 'Linux', 'CrashTime')	796
+('Thunderbird', 'Linux', 'EMCheckCompatibility')	733
+('Thunderbird', 'Linux', 'Email')	121
+('Thunderbird', 'Linux', 'InstallTime')	795
+('Thunderbird', 'Linux', 'ReleaseChannel')	788
+('Thunderbird', 'Linux', 'Throttleable')	795
+('Thunderbird', 'Linux', 'Vendor')	795
+('Thunderbird', 'Linux', 'Version')	796
+('Thunderbird', 'Mac OS X', 'IsGarbageCollecting')	47
+('Thunderbird', 'Windows NT', 'AvailablePhysicalMemory')	18156
+('Thunderbird', 'Windows NT', 'BuildID')	19892
+('Thunderbird', 'Windows NT', 'Notes')	18558
+('Thunderbird', 'Windows NT', 'SystemMemoryUsePercentage')	19224
+('Thunderbird', 'Windows NT', 'Theme')	19088
+('Thunderbird', 'Windows NT', 'legacy_processing')	19893
+('', 'Windows NT', 'AvailableVirtualMemory')	1
+('', 'Windows NT', 'URL')	1
+('', 'Windows NT', 'id')	1
+('B2G', 'Android', '$total')	8
+('B2G', 'Android', 'Android_Hardware')	8
+('B2G', 'Android', 'Android_Version')	8
+('B2G', 'Android', 'CrashTime')	8
+('B2G', 'Android', 'Email')	1
+('B2G', 'Android', 'InstallTime')	8
+('B2G', 'Android', 'ReleaseChannel')	8
+('B2G', 'Android', 'Vendor')	8
+('B2G', 'Android', 'Version')	8
+('B2G', 'Android', 'version')	8
+('B2G', 'Mac OS X', 'AdapterVendorID')	1
+('B2G', 'Mac OS X', 'FramePoisonBase')	1
+('B2G', 'Mac OS X', 'FramePoisonSize')	1
+('B2G', 'Mac OS X', 'ProductID')	1
+('B2G', 'Mac OS X', 'ProductName')	1
+('B2G', 'Mac OS X', 'StartupTime')	1
+('B2G', 'Mac OS X', 'submitted_timestamp')	1
+('B2G', 'Mac OS X', 'timestamp')	1
+('B2G', 'Windows NT', '$total')	5
+('B2G', 'Windows NT', 'AdapterDeviceID')	5
+('B2G', 'Windows NT', 'Add-ons')	4
+('B2G', 'Windows NT', 'AvailablePageFile')	5
+('B2G', 'Windows NT', 'Comments')	1
+('B2G', 'Windows NT', 'CrashTime')	5
+('B2G', 'Windows NT', 'EMCheckCompatibility')	4
+('B2G', 'Windows NT', 'Email')	1
+('B2G', 'Windows NT', 'InstallTime')	5
+('B2G', 'Windows NT', 'ReleaseChannel')	5
+('B2G', 'Windows NT', 'Throttleable')	5
+('B2G', 'Windows NT', 'TotalVirtualMemory')	5
+('B2G', 'Windows NT', 'Vendor')	5
+('B2G', 'Windows NT', 'Version')	5
+('B2G', 'Windows NT', 'version')	5
+('Camino', 'Mac OS X', 'ProductName')	62
+('Camino', 'Mac OS X', 'StartupTime')	62
+('Camino', 'Mac OS X', 'submitted_timestamp')	62
+('Camino', 'Mac OS X', 'timestamp')	62
+('Eudora OSE', 'Windows NT', '$total')	1
+('Eudora OSE', 'Windows NT', 'Add-ons')	1
+('Eudora OSE', 'Windows NT', 'Comments')	1
+('Eudora OSE', 'Windows NT', 'CrashTime')	1
+('Eudora OSE', 'Windows NT', 'Email')	1
+('Eudora OSE', 'Windows NT', 'InstallTime')	1
+('Eudora OSE', 'Windows NT', 'Throttleable')	1
+('Eudora OSE', 'Windows NT', 'Vendor')	1
+('Eudora OSE', 'Windows NT', 'Version')	1
+('Fennec', 'Android', 'Accessibility')	64
+('Fennec', 'Android', 'AdapterVendorID')	41047
+('Fennec', 'Android', 'Android_Board')	47257
+('Fennec', 'Android', 'Android_Device')	47257
+('Fennec', 'Android', 'Android_Display')	47257
+('Fennec', 'Android', 'Android_Logcat')	3206
+('Fennec', 'Android', 'FramePoisonBase')	44673
+('Fennec', 'Android', 'FramePoisonSize')	44673
+('Fennec', 'Android', 'OOMAllocationSize')	57
+('Fennec', 'Android', 'ProductID')	47257
+('Fennec', 'Android', 'ProductName')	47257
+('Fennec', 'Android', 'SecondsSinceLastCrash')	32040
+('Fennec', 'Android', 'StartupTime')	47257
+('Fennec', 'Android', 'submitted_timestamp')	47257
+('Fennec', 'Android', 'timestamp')	47257
+('Fennec', 'Linux', 'Android_Brand')	7002
+('Fennec', 'Linux', 'IsGarbageCollecting')	98
+('Fennec', 'Linux', 'JavaStackTrace')	1144
+('Fennec', 'Linux', 'URL')	599
+('Fennec', 'Linux', 'id')	6669
+('Firefox', 'Linux', 'IsGarbageCollecting')	111
+('Firefox', 'Linux', 'URL')	1205
+('Firefox', 'Linux', 'id')	2176
+('Firefox', 'Mac OS X', '$total')	5700
+('Firefox', 'Mac OS X', 'AdapterDeviceID')	4179
+('Firefox', 'Mac OS X', 'Add-ons')	5605
+('Firefox', 'Mac OS X', 'Comments')	226
+('Firefox', 'Mac OS X', 'CrashTime')	5700
+('Firefox', 'Mac OS X', 'EMCheckCompatibility')	5422
+('Firefox', 'Mac OS X', 'Email')	378
+('Firefox', 'Mac OS X', 'InstallTime')	5700
+('Firefox', 'Mac OS X', 'ReleaseChannel')	5492
+('Firefox', 'Mac OS X', 'Throttleable')	4416
+('Firefox', 'Mac OS X', 'Vendor')	5700
+('Firefox', 'Mac OS X', 'Version')	5700
+('Firefox', 'Mac OS X', 'additional_minidumps')	481
+('Firefox', 'Mac OS X', 'version')	4665
+('Firefox', 'Windows NT', 'Accessibility')	8083
+('Firefox', 'Windows NT', 'AdapterVendorID')	276880
+('Firefox', 'Windows NT', 'CpuUsageFlashProcess2')	46892
+('Firefox', 'Windows NT', 'FramePoisonBase')	254915
+('Firefox', 'Windows NT', 'FramePoisonSize')	254916
+('Firefox', 'Windows NT', 'Hang')	4
+('Firefox', 'Windows NT', 'OOMAllocationSize')	6980
+('Firefox', 'Windows NT', 'PluginFilename')	106624
+('Firefox', 'Windows NT', 'PluginName')	18550
+('Firefox', 'Windows NT', 'ProductID')	263964
+('Firefox', 'Windows NT', 'ProductName')	318069
+('Firefox', 'Windows NT', 'SecondsSinceLastCrash')	182486
+('Firefox', 'Windows NT', 'StartupTime')	317962
+('Firefox', 'Windows NT', 'UserID')	990
+('Firefox', 'Windows NT', 'Winsock_LSP')	276827
+('Firefox', 'Windows NT', 'bug836263-size')	277
+('Firefox', 'Windows NT', 'submitted_timestamp')	318069
+('Firefox', 'Windows NT', 'timestamp')	318069
+('MetroFirefox', 'Windows NT', 'AvailableVirtualMemory')	21
+('MetroFirefox', 'Windows NT', 'URL')	18
+('MetroFirefox', 'Windows NT', 'id')	21
+('SeaMonkey', 'Linux', '$total')	25
+('SeaMonkey', 'Linux', 'Add-ons')	25
+('SeaMonkey', 'Linux', 'Comments')	1
+('SeaMonkey', 'Linux', 'CrashTime')	25
+('SeaMonkey', 'Linux', 'EMCheckCompatibility')	23
+('SeaMonkey', 'Linux', 'Email')	3
+('SeaMonkey', 'Linux', 'InstallTime')	25
+('SeaMonkey', 'Linux', 'ReleaseChannel')	23
+('SeaMonkey', 'Linux', 'Throttleable')	20
+('SeaMonkey', 'Linux', 'Vendor')	25
+('SeaMonkey', 'Linux', 'Version')	25
+('SeaMonkey', 'Linux', 'additional_minidumps')	3
+('SeaMonkey', 'Linux', 'version')	20
+('SeaMonkey', 'Mac OS X', 'IsGarbageCollecting')	1
+('SeaMonkey', 'Mac OS X', 'URL')	7
+('SeaMonkey', 'Mac OS X', 'id')	21
+('SeaMonkey', 'Windows NT', 'AvailablePhysicalMemory')	736
+('SeaMonkey', 'Windows NT', 'BuildID')	1404
+('SeaMonkey', 'Windows NT', 'CpuUsageFlashProcess1')	229
+('SeaMonkey', 'Windows NT', 'HangID')	30
+('SeaMonkey', 'Windows NT', 'Notes')	1280
+('SeaMonkey', 'Windows NT', 'NumberOfProcessors')	314
+('SeaMonkey', 'Windows NT', 'PluginHang')	310
+('SeaMonkey', 'Windows NT', 'PluginVersion')	48
+('SeaMonkey', 'Windows NT', 'ProcessType')	521
+('SeaMonkey', 'Windows NT', 'SystemMemoryUsePercentage')	776
+('SeaMonkey', 'Windows NT', 'Theme')	1391
+('SeaMonkey', 'Windows NT', 'buildid')	1263
+('SeaMonkey', 'Windows NT', 'legacy_processing')	1404
+('Shibo_web', 'Windows NT', 'BuildID')	2
+('Shibo_web', 'Windows NT', 'Theme')	2
+('Shibo_web', 'Windows NT', 'legacy_processing')	2
+('Sunbird', 'Windows NT', 'ProductName')	25
+('Sunbird', 'Windows NT', 'SecondsSinceLastCrash')	21
+('Sunbird', 'Windows NT', 'StartupTime')	25
+('Sunbird', 'Windows NT', 'submitted_timestamp')	25
+('Sunbird', 'Windows NT', 'timestamp')	25
+('Thunderbird', 'Linux', 'IsGarbageCollecting')	63
+('Thunderbird', 'Mac OS X', '$total')	1034
+('Thunderbird', 'Mac OS X', 'AdapterDeviceID')	882
+('Thunderbird', 'Mac OS X', 'Add-ons')	1015
+('Thunderbird', 'Mac OS X', 'Comments')	11
+('Thunderbird', 'Mac OS X', 'CrashTime')	1034
+('Thunderbird', 'Mac OS X', 'EMCheckCompatibility')	993
+('Thunderbird', 'Mac OS X', 'Email')	126
+('Thunderbird', 'Mac OS X', 'InstallTime')	1034
+('Thunderbird', 'Mac OS X', 'ReleaseChannel')	1008
+('Thunderbird', 'Mac OS X', 'Throttleable')	1034
+('Thunderbird', 'Mac OS X', 'Vendor')	1032
+('Thunderbird', 'Mac OS X', 'Version')	1034
+('Thunderbird', 'Windows NT', 'Accessibility')	692
+('Thunderbird', 'Windows NT', 'AdapterVendorID')	18550
+('Thunderbird', 'Windows NT', 'FramePoisonBase')	18883
+('Thunderbird', 'Windows NT', 'FramePoisonSize')	18883
+('Thunderbird', 'Windows NT', 'Hang')	4
+('Thunderbird', 'Windows NT', 'OOMAllocationSize')	1051
+('Thunderbird', 'Windows NT', 'ProductID')	18276
+('Thunderbird', 'Windows NT', 'ProductName')	19893
+('Thunderbird', 'Windows NT', 'SecondsSinceLastCrash')	15200
+('Thunderbird', 'Windows NT', 'StartupTime')	19886
+('Thunderbird', 'Windows NT', 'UserID')	10
+('Thunderbird', 'Windows NT', 'Winsock_LSP')	18462
+('Thunderbird', 'Windows NT', 'submitted_timestamp')	19893
+('Thunderbird', 'Windows NT', 'timestamp')	19893
+('', 'Windows NT', 'ProductID')	1
+('', 'Windows NT', 'ProductName')	1
+('', 'Windows NT', 'StartupTime')	1
+('', 'Windows NT', 'submitted_timestamp')	1
+('', 'Windows NT', 'timestamp')	1
+('B2G', 'Android', 'Android_CPU_ABI')	8
+('B2G', 'Android', 'Android_CPU_ABI2')	8
+('B2G', 'Android', 'Android_Manufacturer')	8
+('B2G', 'Android', 'Android_Model')	8
+('B2G', 'Android', 'B2G_OS_Version')	8
+('B2G', 'Android', 'BuildID')	8
+('B2G', 'Android', 'Notes')	8
+('B2G', 'Android', 'ProcessType')	7
+('B2G', 'Android', 'buildid')	8
+('B2G', 'Android', 'legacy_processing')	8
+('B2G', 'Mac OS X', 'id')	1
+('B2G', 'Windows NT', 'AvailablePhysicalMemory')	5
+('B2G', 'Windows NT', 'BuildID')	5
+('B2G', 'Windows NT', 'Notes')	5
+('B2G', 'Windows NT', 'SystemMemoryUsePercentage')	5
+('B2G', 'Windows NT', 'Theme')	4
+('B2G', 'Windows NT', 'buildid')	5
+('B2G', 'Windows NT', 'legacy_processing')	5
+('Camino', 'Mac OS X', 'URL')	61
+('Eudora OSE', 'Windows NT', 'BuildID')	1
+('Eudora OSE', 'Windows NT', 'Theme')	1
+('Eudora OSE', 'Windows NT', 'legacy_processing')	1
+('Fennec', 'Android', 'Android_Brand')	47257
+('Fennec', 'Android', 'IsGarbageCollecting')	2243
+('Fennec', 'Android', 'JavaStackTrace')	6361
+('Fennec', 'Android', 'URL')	1723
+('Fennec', 'Android', 'id')	47257
+('Fennec', 'Linux', 'Accessibility')	52
+('Fennec', 'Linux', 'AdapterVendorID')	5193
+('Fennec', 'Linux', 'Android_Board')	7002
+('Fennec', 'Linux', 'Android_Device')	7002
+('Fennec', 'Linux', 'Android_Display')	7002
+('Fennec', 'Linux', 'FramePoisonBase')	6659
+('Fennec', 'Linux', 'FramePoisonSize')	6872
+('Fennec', 'Linux', 'OOMAllocationSize')	29
+('Fennec', 'Linux', 'ProductID')	6669
+('Fennec', 'Linux', 'ProductName')	8630
+('Fennec', 'Linux', 'SecondsSinceLastCrash')	5768
+('Fennec', 'Linux', 'StartupTime')	8178
+('Fennec', 'Linux', 'submitted_timestamp')	8630
+('Fennec', 'Linux', 'timestamp')	8630
+('Firefox', 'Linux', 'Accessibility')	56
+('Firefox', 'Linux', 'FramePoisonBase')	1412
+('Firefox', 'Linux', 'FramePoisonSize')	1412
+('Firefox', 'Linux', 'OOMAllocationSize')	29
+('Firefox', 'Linux', 'PluginFilename')	919
+('Firefox', 'Linux', 'PluginName')	29
+('Firefox', 'Linux', 'ProductID')	2017
+('Firefox', 'Linux', 'ProductName')	2274
+('Firefox', 'Linux', 'SecondsSinceLastCrash')	1233
+('Firefox', 'Linux', 'StartupTime')	2274
+('Firefox', 'Linux', 'UserID')	6
+('Firefox', 'Linux', 'submitted_timestamp')	2274
+('Firefox', 'Linux', 'timestamp')	2274
+('Firefox', 'Mac OS X', 'BuildID')	5700
+('Firefox', 'Mac OS X', 'HangID')	117
+('Firefox', 'Mac OS X', 'Notes')	4605
+('Firefox', 'Mac OS X', 'PluginContentURL')	14
+('Firefox', 'Mac OS X', 'PluginHang')	481
+('Firefox', 'Mac OS X', 'PluginUserComment')	2
+('Firefox', 'Mac OS X', 'PluginVersion')	207
+('Firefox', 'Mac OS X', 'ProcessType')	1114
+('Firefox', 'Mac OS X', 'Theme')	5620
+('Firefox', 'Mac OS X', 'buildid')	4665
+('Firefox', 'Mac OS X', 'legacy_processing')	5700
+('Firefox', 'Windows NT', 'AvailableVirtualMemory')	172975
+('Firefox', 'Windows NT', 'CpuUsageFlashProcess3')	9
+('Firefox', 'Windows NT', 'FlashProcessDump')	10132
+('Firefox', 'Windows NT', 'IsGarbageCollecting')	15984
+('Firefox', 'Windows NT', 'Name')	41
+('Firefox', 'Windows NT', 'Startupstop')	1
+('Firefox', 'Windows NT', 'URL')	256805
+('Firefox', 'Windows NT', 'id')	292493
+('MetroFirefox', 'Windows NT', 'Accessibility')	18
+('MetroFirefox', 'Windows NT', 'AdapterVendorID')	20
+('MetroFirefox', 'Windows NT', 'FramePoisonBase')	20
+('MetroFirefox', 'Windows NT', 'FramePoisonSize')	20
+('MetroFirefox', 'Windows NT', 'ProductID')	21
+('MetroFirefox', 'Windows NT', 'ProductName')	21
+('MetroFirefox', 'Windows NT', 'SecondsSinceLastCrash')	9
+('MetroFirefox', 'Windows NT', 'StartupTime')	21
+('MetroFirefox', 'Windows NT', 'submitted_timestamp')	21
+('MetroFirefox', 'Windows NT', 'timestamp')	21
+('SeaMonkey', 'Linux', 'BuildID')	25
+('SeaMonkey', 'Linux', 'Notes')	23
+('SeaMonkey', 'Linux', 'PluginHang')	3
+('SeaMonkey', 'Linux', 'ProcessType')	5
+('SeaMonkey', 'Linux', 'Theme')	25
+('SeaMonkey', 'Linux', 'buildid')	20
+('SeaMonkey', 'Linux', 'legacy_processing')	25
+('SeaMonkey', 'Mac OS X', 'AdapterRendererIDs')	1
+('SeaMonkey', 'Mac OS X', 'AdapterVendorID')	21
+('SeaMonkey', 'Mac OS X', 'FramePoisonBase')	20
+('SeaMonkey', 'Mac OS X', 'FramePoisonSize')	20
+('SeaMonkey', 'Mac OS X', 'OOMAllocationSize')	1
+('SeaMonkey', 'Mac OS X', 'PluginFilename')	6
+('SeaMonkey', 'Mac OS X', 'ProductID')	22
+('SeaMonkey', 'Mac OS X', 'ProductName')	31
+('SeaMonkey', 'Mac OS X', 'SecondsSinceLastCrash')	25
+('SeaMonkey', 'Mac OS X', 'StartupTime')	31
+('SeaMonkey', 'Mac OS X', 'submitted_timestamp')	31
+('SeaMonkey', 'Mac OS X', 'timestamp')	31
+('SeaMonkey', 'Windows NT', '$total')	1404
+('SeaMonkey', 'Windows NT', 'AdapterDeviceID')	1280
+('SeaMonkey', 'Windows NT', 'Add-ons')	1383
+('SeaMonkey', 'Windows NT', 'AvailablePageFile')	736
+('SeaMonkey', 'Windows NT', 'Comments')	4
+('SeaMonkey', 'Windows NT', 'CrashTime')	1404
+('SeaMonkey', 'Windows NT', 'EMCheckCompatibility')	1299
+('SeaMonkey', 'Windows NT', 'Email')	132
+('SeaMonkey', 'Windows NT', 'InstallTime')	1403
+('SeaMonkey', 'Windows NT', 'PluginCpuUsage')	314
+('SeaMonkey', 'Windows NT', 'ReleaseChannel')	1311
+('SeaMonkey', 'Windows NT', 'Throttleable')	868
+('SeaMonkey', 'Windows NT', 'TotalVirtualMemory')	776
+('SeaMonkey', 'Windows NT', 'Vendor')	1404
+('SeaMonkey', 'Windows NT', 'Version')	1404
+('SeaMonkey', 'Windows NT', 'additional_minidumps')	310
+('SeaMonkey', 'Windows NT', 'version')	1263
+('Shibo_web', 'Windows NT', '$total')	2
+('Shibo_web', 'Windows NT', 'Add-ons')	2
+('Shibo_web', 'Windows NT', 'CrashTime')	2
+('Shibo_web', 'Windows NT', 'EMCheckCompatibility')	2
+('Shibo_web', 'Windows NT', 'InstallTime')	2
+('Shibo_web', 'Windows NT', 'ReleaseChannel')	2
+('Shibo_web', 'Windows NT', 'Throttleable')	2
+('Shibo_web', 'Windows NT', 'Vendor')	2
+('Shibo_web', 'Windows NT', 'Version')	2
+('Sunbird', 'Windows NT', 'URL')	25
+('Thunderbird', 'Linux', 'Accessibility')	31
+('Thunderbird', 'Linux', 'FramePoisonBase')	722
+('Thunderbird', 'Linux', 'FramePoisonSize')	722
+('Thunderbird', 'Linux', 'OOMAllocationSize')	50
+('Thunderbird', 'Linux', 'PluginFilename')	1
+('Thunderbird', 'Linux', 'ProductID')	766
+('Thunderbird', 'Linux', 'ProductName')	796
+('Thunderbird', 'Linux', 'SecondsSinceLastCrash')	734
+('Thunderbird', 'Linux', 'StartupTime')	796
+('Thunderbird', 'Linux', 'submitted_timestamp')	796
+('Thunderbird', 'Linux', 'timestamp')	796
+('Thunderbird', 'Mac OS X', 'BuildID')	1034
+('Thunderbird', 'Mac OS X', 'Notes')	925
+('Thunderbird', 'Mac OS X', 'Theme')	1017
+('Thunderbird', 'Mac OS X', 'legacy_processing')	1034
+('Thunderbird', 'Windows NT', 'AvailableVirtualMemory')	19224
+('Thunderbird', 'Windows NT', 'IsGarbageCollecting')	1627
+('Thunderbird', 'Windows NT', 'Name')	6
+('Thunderbird', 'Windows NT', 'URL')	19883
+('', 'Windows NT', 'AvailablePhysicalMemory')	1
+('', 'Windows NT', 'BuildID')	1
+('', 'Windows NT', 'SystemMemoryUsePercentage')	1
+('', 'Windows NT', 'buildid')	1
+('', 'Windows NT', 'legacy_processing')	1
+('B2G', 'Android', 'Android_Board')	8
+('B2G', 'Android', 'Android_Device')	8
+('B2G', 'Android', 'FramePoisonBase')	8
+('B2G', 'Android', 'FramePoisonSize')	8
+('B2G', 'Android', 'ProductID')	8
+('B2G', 'Android', 'ProductName')	8
+('B2G', 'Android', 'StartupTime')	8
+('B2G', 'Android', 'submitted_timestamp')	8
+('B2G', 'Android', 'timestamp')	8
+('B2G', 'Mac OS X', '$total')	1
+('B2G', 'Mac OS X', 'AdapterDeviceID')	1
+('B2G', 'Mac OS X', 'Add-ons')	1
+('B2G', 'Mac OS X', 'Comments')	1
+('B2G', 'Mac OS X', 'CrashTime')	1
+('B2G', 'Mac OS X', 'EMCheckCompatibility')	1
+('B2G', 'Mac OS X', 'InstallTime')	1
+('B2G', 'Mac OS X', 'ReleaseChannel')	1
+('B2G', 'Mac OS X', 'Throttleable')	1
+('B2G', 'Mac OS X', 'Vendor')	1
+('B2G', 'Mac OS X', 'Version')	1
+('B2G', 'Mac OS X', 'version')	1
+('B2G', 'Windows NT', 'AdapterVendorID')	5
+('B2G', 'Windows NT', 'FramePoisonBase')	4
+('B2G', 'Windows NT', 'FramePoisonSize')	4
+('B2G', 'Windows NT', 'ProductID')	5
+('B2G', 'Windows NT', 'ProductName')	5
+('B2G', 'Windows NT', 'SecondsSinceLastCrash')	3
+('B2G', 'Windows NT', 'StartupTime')	5
+('B2G', 'Windows NT', 'Winsock_LSP')	4
+('B2G', 'Windows NT', 'submitted_timestamp')	5
+('B2G', 'Windows NT', 'timestamp')	5
+('Camino', 'Mac OS X', '$total')	62
+('Camino', 'Mac OS X', 'Comments')	4
+('Camino', 'Mac OS X', 'CrashTime')	62
+('Camino', 'Mac OS X', 'Email')	1
+('Camino', 'Mac OS X', 'InstallTime')	55
+('Camino', 'Mac OS X', 'Version')	62
+('Eudora OSE', 'Windows NT', 'ProductName')	1
+('Eudora OSE', 'Windows NT', 'SecondsSinceLastCrash')	1
+('Eudora OSE', 'Windows NT', 'StartupTime')	1
+('Eudora OSE', 'Windows NT', 'submitted_timestamp')	1
+('Eudora OSE', 'Windows NT', 'timestamp')	1
+('Fennec', 'Android', '$total')	47257
+('Fennec', 'Android', 'AdapterDeviceID')	41047
+('Fennec', 'Android', 'Add-ons')	45248
+('Fennec', 'Android', 'Android_Fingerprint')	47257
+('Fennec', 'Android', 'Android_Hardware')	47257
+('Fennec', 'Android', 'Android_Version')	47257
+('Fennec', 'Android', 'CrashTime')	47255
+('Fennec', 'Android', 'EMCheckCompatibility')	45249
+('Fennec', 'Android', 'FlashVersion')	3021
+('Fennec', 'Android', 'InstallTime')	47241
+('Fennec', 'Android', 'Min_ARM_Version')	47257
+('Fennec', 'Android', 'ReleaseChannel')	47257
+('Fennec', 'Android', 'Vendor')	47257
+('Fennec', 'Android', 'Version')	47257
+('Fennec', 'Android', 'version')	47257
+('Fennec', 'Linux', 'Android_CPU_ABI')	7002
+('Fennec', 'Linux', 'Android_CPU_ABI2')	6998
+('Fennec', 'Linux', 'Android_Manufacturer')	7002
+('Fennec', 'Linux', 'Android_Model')	7002
+('Fennec', 'Linux', 'BuildID')	8630
+('Fennec', 'Linux', 'Notes')	7218
+('Fennec', 'Linux', 'ProcessType')	1626
+('Fennec', 'Linux', 'Theme')	8328
+('Fennec', 'Linux', 'buildid')	6669
+('Fennec', 'Linux', 'legacy_processing')	8630
+('Firefox', 'Linux', 'BuildID')	2274
+('Firefox', 'Linux', 'HangID')	113
+('Firefox', 'Linux', 'Notes')	2069
+('Firefox', 'Linux', 'PluginContentURL')	2
+('Firefox', 'Linux', 'PluginHang')	113
+('Firefox', 'Linux', 'ProcessType')	919
+('Firefox', 'Linux', 'Theme')	2230
+('Firefox', 'Linux', 'buildid')	2176
+('Firefox', 'Linux', 'legacy_processing')	2274
+('Firefox', 'Mac OS X', 'Accessibility')	3
+('Firefox', 'Mac OS X', 'AdapterRendererIDs')	404
+('Firefox', 'Mac OS X', 'AdapterVendorID')	4179
+('Firefox', 'Mac OS X', 'FramePoisonBase')	4803
+('Firefox', 'Mac OS X', 'FramePoisonSize')	4803
+('Firefox', 'Mac OS X', 'OOMAllocationSize')	128
+('Firefox', 'Mac OS X', 'PluginFilename')	1114
+('Firefox', 'Mac OS X', 'PluginName')	207
+('Firefox', 'Mac OS X', 'ProductID')	4222
+('Firefox', 'Mac OS X', 'ProductName')	5700
+('Firefox', 'Mac OS X', 'SecondsSinceLastCrash')	3997
+('Firefox', 'Mac OS X', 'StartupTime')	5699
+('Firefox', 'Mac OS X', 'UserID')	26
+('Firefox', 'Mac OS X', 'submitted_timestamp')	5700
+('Firefox', 'Mac OS X', 'timestamp')	5700
+('Firefox', 'Windows NT', '$total')	318069
+('Firefox', 'Windows NT', 'AdapterDeviceID')	276878
+('Firefox', 'Windows NT', 'Add-ons')	301044
+('Firefox', 'Windows NT', 'AvailablePageFile')	148836
+('Firefox', 'Windows NT', 'Comments')	3336
+('Firefox', 'Windows NT', 'CpuUsageFlashProcess4')	8
+('Firefox', 'Windows NT', 'CrashTime')	318055
+('Firefox', 'Windows NT', 'EMCheckCompatibility')	300840
+('Firefox', 'Windows NT', 'Email')	36912
+('Firefox', 'Windows NT', 'InstallTime')	316731
+('Firefox', 'Windows NT', 'PluginCpuUsage')	60478
+('Firefox', 'Windows NT', 'ReleaseChannel')	312549
+('Firefox', 'Windows NT', 'Throttleable')	201285
+('Firefox', 'Windows NT', 'TotalVirtualMemory')	172978
+('Firefox', 'Windows NT', 'Vendor')	318069
+('Firefox', 'Windows NT', 'Version')	318069
+('Firefox', 'Windows NT', 'additional_minidumps')	59159
+('Firefox', 'Windows NT', 'version')	292492
+('MetroFirefox', 'Windows NT', 'AvailablePhysicalMemory')	21
+('MetroFirefox', 'Windows NT', 'BuildID')	21
+('MetroFirefox', 'Windows NT', 'Notes')	20
+('MetroFirefox', 'Windows NT', 'SystemMemoryUsePercentage')	21
+('MetroFirefox', 'Windows NT', 'Theme')	20
+('MetroFirefox', 'Windows NT', 'buildid')	21
+('MetroFirefox', 'Windows NT', 'legacy_processing')	21
+('SeaMonkey', 'Linux', 'Accessibility')	4
+('SeaMonkey', 'Linux', 'FramePoisonBase')	21
+('SeaMonkey', 'Linux', 'FramePoisonSize')	21
+('SeaMonkey', 'Linux', 'OOMAllocationSize')	2
+('SeaMonkey', 'Linux', 'PluginFilename')	5
+('SeaMonkey', 'Linux', 'ProductID')	20
+('SeaMonkey', 'Linux', 'ProductName')	25
+('SeaMonkey', 'Linux', 'SecondsSinceLastCrash')	19
+('SeaMonkey', 'Linux', 'StartupTime')	25
+('SeaMonkey', 'Linux', 'submitted_timestamp')	25
+('SeaMonkey', 'Linux', 'timestamp')	25
+('SeaMonkey', 'Mac OS X', 'BuildID')	31
+('SeaMonkey', 'Mac OS X', 'Notes')	22
+('SeaMonkey', 'Mac OS X', 'PluginHang')	4
+('SeaMonkey', 'Mac OS X', 'ProcessType')	6
+('SeaMonkey', 'Mac OS X', 'Theme')	29
+('SeaMonkey', 'Mac OS X', 'buildid')	21
+('SeaMonkey', 'Mac OS X', 'legacy_processing')	31
+('SeaMonkey', 'Windows NT', 'AvailableVirtualMemory')	776
+('SeaMonkey', 'Windows NT', 'FlashProcessDump')	40
+('SeaMonkey', 'Windows NT', 'IsGarbageCollecting')	79
+('SeaMonkey', 'Windows NT', 'URL')	862
+('SeaMonkey', 'Windows NT', 'id')	1263
+('Shibo_web', 'Windows NT', 'URL')	2
+('Sunbird', 'Windows NT', '$total')	25
+('Sunbird', 'Windows NT', 'Add-ons')	25
+('Sunbird', 'Windows NT', 'CrashTime')	25
+('Sunbird', 'Windows NT', 'Email')	1
+('Sunbird', 'Windows NT', 'InstallTime')	25
+('Sunbird', 'Windows NT', 'Throttleable')	25
+('Sunbird', 'Windows NT', 'Vendor')	25
+('Sunbird', 'Windows NT', 'Version')	25
+('Thunderbird', 'Linux', 'BuildID')	796
+('Thunderbird', 'Linux', 'HangID')	1
+('Thunderbird', 'Linux', 'Notes')	641
+('Thunderbird', 'Linux', 'ProcessType')	1
+('Thunderbird', 'Linux', 'Theme')	733
+('Thunderbird', 'Linux', 'legacy_processing')	796
+('Thunderbird', 'Mac OS X', 'AdapterRendererIDs')	39
+('Thunderbird', 'Mac OS X', 'AdapterVendorID')	882
+('Thunderbird', 'Mac OS X', 'FramePoisonBase')	1001
+('Thunderbird', 'Mac OS X', 'FramePoisonSize')	1001
+('Thunderbird', 'Mac OS X', 'OOMAllocationSize')	9
+('Thunderbird', 'Mac OS X', 'ProductID')	886
+('Thunderbird', 'Mac OS X', 'ProductName')	1034
+('Thunderbird', 'Mac OS X', 'SecondsSinceLastCrash')	816
+('Thunderbird', 'Mac OS X', 'StartupTime')	1034
+('Thunderbird', 'Mac OS X', 'submitted_timestamp')	1034
+('Thunderbird', 'Mac OS X', 'timestamp')	1034
+('Thunderbird', 'Windows NT', '$total')	19893
+('Thunderbird', 'Windows NT', 'AdapterDeviceID')	18550
+('Thunderbird', 'Windows NT', 'Add-ons')	19073
+('Thunderbird', 'Windows NT', 'AvailablePageFile')	18156
+('Thunderbird', 'Windows NT', 'Comments')	149
+('Thunderbird', 'Windows NT', 'CrashTime')	19893
+('Thunderbird', 'Windows NT', 'EMCheckCompatibility')	18940
+('Thunderbird', 'Windows NT', 'Email')	2313
+('Thunderbird', 'Windows NT', 'InstallTime')	19796
+('Thunderbird', 'Windows NT', 'ReleaseChannel')	19687
+('Thunderbird', 'Windows NT', 'Throttleable')	19883
+('Thunderbird', 'Windows NT', 'TotalVirtualMemory')	19224
+('Thunderbird', 'Windows NT', 'Vendor')	19892
+('Thunderbird', 'Windows NT', 'Version')	19893
