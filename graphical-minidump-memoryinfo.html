@@ -12,6 +12,9 @@
   }
   #c {
     position: relative;
+    width: 100%;
+    cursor: crosshair;
+    cursor: url(images/open-crosshair.png) 11 11, crosshair;
   }
   #overlay {
     border: 1px solid black;
@@ -31,6 +34,15 @@
     <li id="commitLegend">Committed Page
     <li id="reserveLegend">Reserved Page
   </ul>
+
+  Page size (pixels):
+  <select id="selectPixelSize">
+    <option value="1">1
+    <option value="2">2
+    <option value="3" selected>3
+    <option value="4">4
+    <option value="5">5
+  </select>
 
   <p><a id="datalink" href="data/bug857030-863bb262-a6dd-43fe-ae32-ef9a82130404.memorylist">View the raw data</a>. Data generated using Google Breakpad and the <a href="https://github.com/bsmedberg/minidump-memorylist">minidump-memorylist</a> tool.
 

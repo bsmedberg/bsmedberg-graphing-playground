@@ -43,10 +43,6 @@ $(function doit() {
   });
 });
 
-var gPixelSize = 3;
-var gCanvasWidth = 1024;
-var gPagesPerRow = Math.floor(gCanvasWidth / gPixelSize);
-
 // Assume 32-bit windows for now
 var gPageSize = 0x1000;
 var gNumPages = BigInteger('0xFFFFFFFF').divide(gPageSize).toJSValue();
@@ -54,8 +50,6 @@ var gNumPages = BigInteger('0xFFFFFFFF').divide(gPageSize).toJSValue();
 var gCommitColor = '#221d6b';
 var gReserveColor = '#cca633';
 
-
-var gRowCount = Math.ceil(gNumPages / gPagesPerRow);
 
 var gLargest = BigInteger(0);
 
@@ -93,13 +87,33 @@ function setup()
 {
   verifySequential();
 
-  var width = gPagesPerRow * gPixelSize;
+  redraw();
+}
+
+var gPixelSize;
+var gPagesPerRow;
+var gRowCount;
+var gRedrawPending = false;
+
+function redraw() {
+  gRedrawPending = false;
+  $('#overlay').hide();
+
+  gPixelSize = parseInt($('#selectPixelSize').val());
+  var canvasWidth = $('#c').width();
+
+  gPagesPerRow = Math.floor(canvasWidth / gPixelSize);
+  // Make gPagesPerRow a multiple of 8 because that's the Windows allocation
+  // block size.
+  gPagesPerRow -= gPagesPerRow % 16;
+  gRowCount = Math.ceil(gNumPages / gPagesPerRow);
+
   var height = gRowCount * gPixelSize;
-  $('#c').attr('width', width).attr('height', height);
+  $('#c').attr('width', canvasWidth).attr('height', height);
   var cx = $('#c')[0].getContext('2d');
 
   cx.fillStyle = 'white';
-  cx.fillRect(0, 0, width, height);
+  cx.fillRect(0, 0, canvasWidth, height);
 
   function fillPage(pageNum)
   {
@@ -237,4 +251,13 @@ $('#c').on('mousemove', function(e) {
 
 $('#c').on('mouseout', function(e) {
   $('#overlay').hide();
+});
+
+$('#selectPixelSize').on('change', redraw);
+
+$(window).on('resize', function() {
+  if (!gRedrawPending) {
+    gRedrawPending = true;
+    setTimeout(redraw, 100);
+  }
 });
