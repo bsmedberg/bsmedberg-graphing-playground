@@ -93,6 +93,8 @@ function go() {
     var chartdata = [];
     var totalschart = [];
 
+    var overlapcharts = [];
+
     $.each(allbuilds, function(i, build) {
       var data = buildmap[build];
       chartdata.push({
@@ -105,6 +107,18 @@ function go() {
                                parseInt(m[3]),
                                parseInt(m[4]));
       totalschart.push([builddate.getTime(), data.total]);
+
+      var buildday = new Date(builddate.getTime());
+      buildday.setHours(0);
+      var overlapdata = [];
+      $.each(data, function(i, d) {
+        var time = d[0];
+        var c = d[1];
+        overlapdata.push([(time - buildday.getTime()) / kMSPerDay, c]);
+      });
+      overlapcharts.push({
+        data: overlapdata,
+      });
     });
 
     chartdata.unshift({
@@ -121,6 +135,7 @@ function go() {
 
     $('#chart').width((maxDate - minDate) / kMSPerDay * 24);
     $('#chart').height(500);
+    $('#chart2').width(400).height(250);
 
     $.plot($('#chart'), chartdata, {
       legend: { show: false },
@@ -139,6 +154,16 @@ function go() {
       },
       grid: {
         markings: weekendAreas,
+      },
+    });
+    $.plot($('#chart2'), overlapcharts, {
+      legend: { show: false },
+      series: {
+        color: "rgba(0, 0, 0, 0.15)",
+        lines: {
+          show: true,
+          lineWidth: 1,
+        },
       },
     });
   });
