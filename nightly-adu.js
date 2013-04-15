@@ -50,9 +50,14 @@ function weekendAreas(axes) {
   return markings;
 }
 
+var kStartColor = $.Color('blue');
+var kEndColor = $.Color('green');
+
 function go() {
   loadData(null, 'text', function(data) {
     var buildmap = {};
+
+    var allbuilds = [];
 
     var minDate = Date.now();
     var maxDate = 0;
@@ -72,6 +77,7 @@ function go() {
 
              var l;
              if (!(build in buildmap)) {
+               allbuilds.push(build);
                l = [];
                l.total = 0;
                buildmap[build] = l;
@@ -87,9 +93,11 @@ function go() {
     var chartdata = [];
     var totalschart = [];
 
-    $.each(buildmap, function(build, data) {
+    $.each(allbuilds, function(i, build) {
+      var data = buildmap[build];
       chartdata.push({
         data: data,
+        color: kStartColor.transition(kEndColor, i / allbuilds.length).toHexString(),
       });
       var m = /^(\d{4})(\d{2})(\d{2})(\d{2})/.exec(build);
       var builddate = new Date(parseInt(m[1]),
@@ -110,7 +118,6 @@ function go() {
       },
       color: "rgba(0,0,0,0.6)",
     });
-    console.log(totalschart);
 
     $('#chart').width((maxDate - minDate) / kMSPerDay * 24);
     $('#chart').height(500);
