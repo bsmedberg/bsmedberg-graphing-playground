@@ -4,52 +4,6 @@ function stringToDate(s)
   return new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
 }
 
-var kMSPerDay = 24 * 60 * 60 * 1000;
-
-function allMondays(axis) {
-  d = new Date(axis.min);
-
-  // go to the first Monday
-  d.setDate(d.getDate() - ((d.getDay() + 6) % 7));
-  d.setSeconds(0);
-  d.setMinutes(0);
-  d.setHours(0);
-
-  var ticks = [];
-
-  var i = d.getTime();
-  do {
-    ticks.push([i, (new Date(i)).toLocaleFormat("%Y-%m-%d")]);
-    i += 7 * kMSPerDay;
-  } while (i < axis.max);
-
-  return ticks;
-}
-
-function weekendAreas(axes) {
-  var markings = [],
-  d = new Date(axes.xaxis.min);
-
-  // go to the first Saturday
-
-  d.setDate(d.getDate() - ((d.getDay() + 1) % 7))
-  d.setSeconds(0);
-  d.setMinutes(0);
-  d.setHours(0);
-
-  var i = d.getTime();
-
-  // when we don't set yaxis, the rectangle automatically
-  // extends to infinity upwards and downwards
-
-  do {
-	markings.push({ xaxis: { from: i, to: i + 2 * 24 * 60 * 60 * 1000 } });
-	i += 7 * 24 * 60 * 60 * 1000;
-  } while (i < axes.xaxis.max);
-
-  return markings;
-}
-
 var kStartColor = $.Color('blue');
 var kEndColor = $.Color('green');
 
@@ -146,7 +100,7 @@ function go() {
       },
       xaxis: {
         mode: "time",
-        timesonze: "browser",
+        timezone: "browser",
         // tickSize: [7, "day"],
         ticks: allMondays,
         min: minDate,
