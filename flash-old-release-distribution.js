@@ -108,7 +108,6 @@ function doPlot()
     xaxis: {
       mode: "time",
       timezone: "browser",
-      axisLabel: "Date",
       color: "#333",
       ticks: allMondays,
       dateFormat: 'yy-MMM-d',
