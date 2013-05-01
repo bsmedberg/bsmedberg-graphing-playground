@@ -5,6 +5,7 @@ import svgwrite
 from collections import namedtuple
 import math
 import json
+import svggraph
 
 RowType = namedtuple('RowType', ('k',
                                  'Signature',
@@ -17,38 +18,19 @@ RowType = namedtuple('RowType', ('k',
 
 data = [RowType(*ast.literal_eval(line))
         for line in open('data/memoryslurp-130410-15')]
-maxsize = max((i.LargestVirtualBlock for i in data if i.LargestVirtualBlock != 'error'))
-minsize = min((i.LargestVirtualBlock for i in data if i.LargestVirtualBlock != 'error'))
 
-maxpage = max((int(i.AvailablePageFile) for i in data if i.AvailablePageFile is not None))
-minpage = min((int(i.AvailablePageFile) for i in data if i.AvailablePageFile is not None))
+data = [i for i in data
+        if i.LargestVirtualBlock != 'error' and i.AvailablePageFile is not None]
+
+minsize, minpage, maxsize, maxpage = svggraph.getminmax(
+    (i.LargestVirtualBlock, int(i.AvailablePageFile)) for i in data)
 
 graphSize = 1400
-margin = 4
 dotSize = 8
-tickLength = 4
-
-fontSize = 10
-fontHeight = fontSize * 1.3
-
-graphOffset = margin + fontHeight + margin + fontHeight + tickLength
-innerSize = graphSize - graphOffset - margin
 
 MB = 0x100000
 
 log = 10
-
-logminsize = math.log(minsize, log)
-logmaxsize = math.log(maxsize, log)
-
-logminpage = math.log(minpage, log)
-logmaxpage = math.log(maxpage, log)
-
-def translatey(val):
-    return innerSize / (logmaxpage - logminpage) * (math.log(val, log) - logminpage)
-
-def translatex(val):
-    return innerSize / (logmaxsize - logminsize) * (math.log(val, log) - logminsize)
 
 def ticks(mintick, maxtick):
     printticks = (1, 5)
@@ -60,61 +42,47 @@ def ticks(mintick, maxtick):
                 return
             if val < mintick:
                 continue
-            yield val, (m in printticks)
+            label = ""
+            if m in printticks:
+                label = str(val / MB)
+            yield val, label
         base = base * 10
 
 d = svgwrite.Drawing(debug=False,
                      id='graphRoot',
                      viewBox='0 0 %s %s' % (graphSize, graphSize),
                      preserveAspectRatio='xMinYMin')
-d.add(d.path(('m', graphOffset, margin,
-              'L', graphOffset, margin + innerSize,
-              'L', graphOffset + innerSize, margin + innerSize), class_='border'))
 
-for tickval, printtick in ticks(minsize, maxsize):
-    xpos = translatex(tickval) + graphOffset
-    d.add(d.line((xpos, margin + innerSize),
-                 (xpos, margin + innerSize + tickLength), class_='tick'))
-    if printtick:
-        d.add(d.text(tickval / 0x100000,
-                     (xpos, margin + innerSize + tickLength + margin),
-                     class_="tickLabel xaxis"))
+plot = svggraph.Plot(d, graphSize, graphSize,
+                     minsize, minpage, maxsize, maxpage)
+d.add(plot.root)
+plot.config.xaxis.transform = lambda v: math.log(v, log)
+plot.config.yaxis.transform = lambda v: math.log(v, log)
+plot.drawAxes()
 
-d.add(d.text("Largest Virtual Memory Block (MB)",
-             (graphSize / 2, margin + innerSize + tickLength + margin + fontHeight + margin),
-             class_="axisLabel xaxis"))
+plot.printTicks('x', ticks(minsize, maxsize))
+plot.printTicks('y', ticks(minpage, maxpage))
+plot.printXAxisLabel("Largest Virtual Memory Block (MB)")
+plot.printYAxisLabel("MEMORYSTATUS.dwAvailVirtual (MB)")
 
-for tickval, printtick in ticks(minpage, maxpage):
-    ypos = margin + innerSize - translatey(tickval)
-    d.add(d.line((graphOffset - tickLength, ypos),
-                 (graphOffset, ypos), class_='tick'))
-    if printtick:
-        t = d.add(d.text(tickval / 0x100000,
-                         (graphOffset - tickLength - margin, ypos),
-                         class_="tickLabel yaxis"))
-        t.rotate(-90, (graphOffset - tickLength - margin, ypos))
-
-t = d.add(d.text("MEMORYSTATUS.dwAvailVirtual (MB)",
-                 (margin + fontHeight, graphSize / 2),
-                 class_="axisLabel yaxis"))
-t.rotate(-90, (margin + fontHeight, graphSize / 2))
+fontHeight = plot.fontHeight()
 
 for i in data:
-    if i.LargestVirtualBlock == 'error':
-        continue
-    xpos = translatex(i.LargestVirtualBlock) + graphOffset
-    ypos = margin + innerSize - translatey(int(i.AvailablePageFile))
-    mark = d.add(d.circle((xpos, ypos), dotSize / 2, class_="mark"))
+    x, y = plot.transform(i.LargestVirtualBlock, int(i.AvailablePageFile))
+    mark = plot.root.add(d.circle((x, y), dotSize / 2, class_="mark"))
     mark['uuid'] = i.k[7:]
     for item in RowType._fields[1:]:
         mark[item] = getattr(i, item)
 
 minScale = max(minsize, minpage)
-maxScale = min(maxsize, maxpage)
+minScaleX, minScaleY = plot.transform(minScale, minScale)
 
-d.add(d.path(('m', translatex(minScale) + graphOffset, margin + innerSize - translatey(minScale),
-              'L', translatex(maxScale) + graphOffset, margin + innerSize - translatey(maxScale)),
-             class_='divider'))
+maxScale = min(maxsize, maxpage)
+maxScaleX, maxScaleY = plot.transform(maxScale, maxScale)
+
+plot.root.add(d.path(('M', minScaleX, minScaleY,
+                      'L', maxScaleX, maxScaleY),
+                     class_='divider'))
 
 detailsWidth = 400
 detailsHeight = 215
@@ -166,9 +134,6 @@ svg {
   font-size: %(fontSize)dpt;
   text-anchor: middle;
 }
-.xaxis {
-  dominant-baseline: hanging;
-}
 .axisLabel {
   font-weight: bold;
 }
@@ -205,7 +170,7 @@ svg {
 #reportLinkText:hover {
   fill: #66F;
 }
-""" % {'fontSize': fontSize}))
+""" % {'fontSize': plot.config.fontSize}))
 
 d.add(d.script(type='text/javascript',
                href='http://d3js.org/d3.v3.min.js'))
