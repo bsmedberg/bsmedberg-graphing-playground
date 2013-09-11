@@ -58,10 +58,13 @@ class Plot(object):
 
     def innerBounds(self):
         """Return l, t, r, b"""
-        left = self.config.margin * 2 + self.fontHeight() * 2 + self.config.tickLength
+        leftTickLabelSize = self.config.yaxis.get('labelDepth', self.fontHeight)
+        bottomTickLabelSize = self.config.xaxis.get('labelDepth', self.fontHeight);
+
+        left = self.config.margin * 2 + self.fontHeight() + leftTickLabelSize + self.config.tickLength
         right = self.width - self.config.margin
         top = self.config.margin
-        bottom = self.height - self.config.margin * 2 - self.fontHeight() * 2 - self.config.tickLength
+        bottom = self.height - self.config.margin - bottomTickLabelSize - self.fontHeight() * 2 - self.config.tickLength
 
         return left, top, right, bottom
 
@@ -102,9 +105,11 @@ class Plot(object):
             self.root.add(self.d.line((x, y), (x, y + self.config.tickLength),
                                       class_='tick'))
             if len(label):
-                self.root.add(self.d.text(label,
-                                          (x, y + self.config.tickLength + self.config.margin + self.fontHeight()),
-                                          class_='tickLabel xaxis'))
+                pos = (x, y + self.config.tickLength + self.config.margin + self.fontHeight())
+                t = self.root.add(self.d.text(label, pos,
+                                              class_='tickLabel xaxis'))
+                rotate = self.config.xaxis.get('labelRotate', 0)
+                t.rotate(rotate, pos)
 
         def printYTick(v, label):
             x, y = self.transform(self.minx, v)
@@ -114,7 +119,8 @@ class Plot(object):
                 pos = (x - self.config.tickLength - self.config.margin, y)
                 t = self.root.add(self.d.text(label, pos,
                                               class_='tickLabel yaxis'))
-                t.rotate(-90, pos)
+                rotate = self.config.yaxis.get('labelRotate', -90)
+                t.rotate(rotate, pos)
 
         fn = {'x': printXTick,
               'y': printYTick}[axis]
