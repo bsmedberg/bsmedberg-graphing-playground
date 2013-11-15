@@ -19,7 +19,7 @@ MemoryInfo.prototype.toString = function meminfo_toString() {
           this.RegionSize, this.State, this.Protect, this.Type].join(',');
 };
 MemoryInfo.prototype.getPage = function meminfo_getPage() {
-  return this.BaseAddress.divide(gPageSize);
+  return this.BaseAddress.divide(gPageSize).toJSValue();
 }
 MemoryInfo.prototype.getPageCount = function meminfo_getPageCount() {
   return this.RegionSize / gPageSize;
@@ -231,6 +231,19 @@ function getDisplayType(type)
   return type.toString(16);
 }
 
+function getDataForPage(p)
+{
+  console.log("Looking for page", p);
+  for (var i = 0; i < gData.length; ++i) {
+    var d = gData[i];
+    if (d.containsPage(p)) {
+      console.log("Found Data", i);
+      return d;
+    }
+  }
+  return null;
+}
+
 $('#c').on('mousemove', function(e) {
   var thisx = e.pageX - this.offsetLeft;
   var thisy = e.pageY - this.offsetTop;
@@ -239,12 +252,10 @@ $('#c').on('mousemove', function(e) {
   var row = Math.floor(thisy / gPixelSize);
   var page = row * gPagesPerRow + col;
 
-  var mi = null;
-  for (var i = 0; i < gData.length; ++i) {
-    mi = gData[i];
-    if (mi.containsPage(page)) {
-      break;
-    }
+  var mi = getDataForPage(page);
+  if (mi === null) {
+    $("#overlay").hide();
+    return;
   }
 
   $('#infoaddress').text("0x" + mi.BaseAddress.toString(16));
